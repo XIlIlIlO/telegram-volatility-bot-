@@ -12,6 +12,7 @@ from telegram_client import TelegramClient
 from openai_summarizer import OpenAISummarizer
 from indicators import ema, rsi
 from state_store import StateStore
+import time
 
 print("[debug] TELEGRAM_BOT_TOKEN exists?", "TELEGRAM_BOT_TOKEN" in os.environ)
 print("[debug] available env sample:", sorted([k for k in os.environ.keys() if "TELEGRAM" in k or "OPENAI" in k or "BINANCE" in k])[:50])
